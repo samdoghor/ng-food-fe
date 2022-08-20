@@ -1,0 +1,5 @@
+flask
+autopep8
+pycodestyle
+pylint
+python-dotenv

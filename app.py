@@ -1,7 +1,6 @@
 #-------------------------------------------------------#
 # Imports
 #-------------------------------------------------------#
-from unicodedata import name
 from flask import Flask, render_template
 
 #-------------------------------------------------------#
@@ -10,7 +9,13 @@ from flask import Flask, render_template
 app = Flask(__name__)
 
 @app.route('/')
-def homepage():
-    return render_template('pages/index.html', name=name)
+def index():
+    return render_template('pages/index.html')
 
+#-------------------------------------------------------#
+# Error Handler
+#-------------------------------------------------------#
+@app.errorhandler(404)
+def PageNotFound(error):
+    return render_template('errors/404.html'), 404
 

@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+  }
+.na-logo-color-1{
+    color: #006633;
+}
+
+.na-logo-color-2{
+    color: #cc3300;
+}
+.na-logo-1-bg{
+    background-color: #006633;    
+}
+.na-logo-2-bg{
+    background-color: #cc3300;    
+}
+.na-bm{
+    margin-bottom: 0;
+}
+.na-d-height{
+    min-height: 100vh;
+}
+.na-left-pad-0{
+    padding-left: 0;
+}
+.na-rm-underline{
+    text-decoration: none;
+}
+.na-btn-1{
+    background-color: #cc3300; 
+    border: 0;
+
+}
+.na-btn-1:hover{
+    background-color: #006633; 
+}

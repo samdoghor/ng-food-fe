@@ -12,6 +12,10 @@ app = Flask(__name__)
 def index():
     return render_template('pages/index.html')
 
+@app.route('/learn')
+def homes():
+    return render_template('pages/learn.html')
+
 #-------------------------------------------------------#
 # Error Handler
 #-------------------------------------------------------#

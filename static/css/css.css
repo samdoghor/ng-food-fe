@@ -1,3 +1,33 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+a, a:link, a:hover, a:active, a:visited {
+    text-decoration: none;
+}
+.bg-comp {
+    background-color: #d5d6d9;
+}
+
+.text-comp {
+    color: #d5d6d9;
+}
+.pt-9 {
+    padding-top: 6% !important;
+  }
+
+.px-10 {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.bg-gre {
+    background-color: #1e4023    ;
+}
+.text-gre {
+    color: #1e4023   ;
+}
+.bg-org {
+    background-color: #1f2839     ;
+}
+.text-org {
+    color: #1f2839    ;
+}
+.und:hover {
+    text-decoration: underline !important;
+}

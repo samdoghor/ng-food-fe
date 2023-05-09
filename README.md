@@ -1,6 +1,6 @@
 # Food Logic
 
-The app simplifies nutrition tracking, using tools such as calorie counters, nutrient trackers, and recipe calculators.The app is built using Python ` Flask ` framework and ` tailwind `.
+The app simplifies nutrition tracking, using tools such as calorie counters, nutrient trackers, and recipe calculators.The app is built using Python ` Flask ` framework.
 
 ## Running the App
 
@@ -68,16 +68,6 @@ On Mac, use the following command instead:
 
 ```bash Copy code
 set FLASK_DEBUG=True
-```
-
-- Using Tailwind CSS
-
-Make sure you have Node.js and npm installed on your computer.
-
-This Flask app uses Tailwind CSS for styling. The necessary styles are already included in the `static/css` directory, so you don't need to install or configure anything further. To customize the styles, you can edit the `tailwind.config.js` file and rebuild the CSS using the command below.
-
-```bash Copy code
-npm run build
 ```
 
 - Duplicate the `example.env` file and rename it to `.env`. Fill in the appropriate information in the `.env` file.

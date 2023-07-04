@@ -16,6 +16,18 @@ a, a:link, a:hover, a:active, a:visited {
     padding-left: 10%;
     padding-right: 10%;
 }
+.px-12 {
+    padding-left: 12%;
+    padding-right: 12%;
+}
+.px-20 {
+    padding-left: 20%;
+    padding-right: 20%;
+}
+.py-10 {
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
 .bg-gre {
     background-color: #1e4023    ;
 }

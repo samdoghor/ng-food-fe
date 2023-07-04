@@ -1,109 +1,51 @@
-# Food Logic
+# Nigeria Food API Frontend
 
-The app simplifies nutrition tracking, using tools such as calorie counters, nutrient trackers, and recipe calculators.The app is built using Python ` Flask ` framework.
+This is the frontend repository for the `Nigeria Food API project`. It is built with Vite, React, TypeScript, and Tailwind CSS. The frontend provides a user interface to interact with the Nigerian Food Database API and display information about various Nigerian dishes, their ingredients, and nutritional values.
 
-## Running the App
+## Related Repo
 
-To get started with the app:
+[Backend](https://github.com/samdoghor/ng-food-api) of the Nigeria Food APIs
 
-- Clone the repository to your local machine
+## Installation
 
-```bash Copy code
-git clone https://github.com/samdoghor/foodlogic.git
-```
+To run the frontend locally, follow these steps:
 
-- Navigate to the project directory in your terminal
+### Clone the repository
 
 ```bash Copy code
-cd foodlogic
+git clone https://github.com/samdoghor/ngfood_fe.git
 ```
 
-- Create a virtual environment and activate it
+### Navigate to the project directory
 
 ```bash Copy code
-pip install virtualenv 
-
-virtualenv env
-
-source env/scripts/activate
+cd ngfood_fe
 ```
 
-- On Mac, use the following command instead:
+### Install dependencies
 
 ```bash Copy code
-pip install virtualenv 
-
-virtualenv env
-
-source env/bin/activate
+npm install
 ```
 
-- Install dependencies
+### Start the development server
 
 ```bash Copy code
-pip install pipenv
-
-pipenv install
+npm run dev
 ```
 
-- Expose the Flask app by running the following command:
+The frontend should now be running on <http://localhost:3000>.
 
-```bash Copy code
-export FLASK_APP=app.py
-```
+## Usage
 
-- On Mac, use the following command instead:
-
-```bash Copy code
-set FLASK_APP=app.py
-```
-
-- To enable auto-restart when changes are detected, set debug to true:
-
-```bash Copy code
-export FLASK_DEBUG=True
-```
-
-On Mac, use the following command instead:
-
-```bash Copy code
-set FLASK_DEBUG=True
-```
-
-- Duplicate the `example.env` file and rename it to `.env`. Fill in the appropriate information in the `.env` file.
-
-- Finally, run the app:
-
-```bash Copy code
-flask run
-```
-
-Open your web browser and go to `http://localhost:5000`.
-
-## Current Functional Features
-
-None
-
-## Love to have Features
-
-- **Calorie Counter:** This feature allows users to track their daily caloric intake by entering the type and amount of food they consume. The app then calculates the number of calories in the food and provides a total for the day. Users can also set a daily caloric intake goal based on their height, weight, and activity level.
-
-- **Macronutrient Calculator:** This feature allows users to track their daily intake of protein, carbohydrates, and fats. Users can enter the foods they eat, and the app will calculate the amount of each macronutrient consumed. The app also provides recommendations for macronutrient ratios based on the user's goals (e.g., weight loss, muscle gain).
-
-- **Nutrient Tracker:** This feature allows users to track their daily intake of various vitamins and minerals. Users can enter the foods they eat, and the app will calculate the amount of each nutrient consumed. The app also provides recommendations for nutrient intake based on the user's age, gender, and health status.
-
-- **Recipe Calculator:** This feature allows users to calculate the nutritional information of homemade recipes. Users can enter the ingredients and amounts used in a recipe, and the app will calculate the calories, macronutrients, and other nutrients per serving. The app also provides suggestions for healthy ingredient substitutions.
-
-- **Water Intake Tracker:** This feature allows users to calculate their recommended daily water intake based on their weight, activity level, and climate. Users can enter the amount of water they drink throughout the day, and the app will calculate their progress towards their daily goal. The app also provides reminders to drink water throughout the day.
+Once the frontend is running, you can access the web application by opening <http://localhost:3000> in your web browser. The application provides a user-friendly interface to browse and search for Nigerian dishes. You can view details about each dish, including the ingredients used and their nutritional values.
 
 ## Contributing
 
-Contributions to this project are welcome, but for the time being not allowed till bone structure of the project is ready. If you find a bug or have an idea for a new feature, please open an issue on the GitHub repository.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+Contributions to this project are currently not open. However, you are welcome to provide suggestions and feedback. If you encounter any bugs or have feature requests, please create a new issue in the repository.
 
 ## Contact
 
-To contact me, email [talkto@samdoghor.com](mailto:talkto@samdoghor.com)
+To contact the developer, email [talkto@samdoghor.com](mailto:talkto@sadoghor.com)
+
+Please note that this project is still in its early stages, and more functionality may be added in the future. This README file will be updated accordingly as the project progresses.

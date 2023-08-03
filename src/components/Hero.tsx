@@ -1,6 +1,4 @@
-import React from "react";
-
-type Props = {};
+type Props = unknown;
 
 const Hero = (props: Props) => {
   return (

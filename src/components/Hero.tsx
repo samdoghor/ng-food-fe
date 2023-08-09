@@ -1,19 +1,12 @@
-type Props = unknown;
-
-const Hero = (props: Props) => {
+const Hero = () => {
   return (
-    <div>
-      <div>
-        <p>
-          <span> The Nigerian </span>
-        </p>
-        <p>
-          <span>
-            Food <span> Api </span>
-          </span>
-        </p>
+    <>
+      <div className="max-w-full max-h-screen mx-auto">
+        <div className="p-20">
+          <p> #1 The Nigeria Food Database API </p>
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 

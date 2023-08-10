@@ -1,4 +1,4 @@
-import { Box } from "@chakra-ui/react";
+import { Box, Image, Text, chakra } from "@chakra-ui/react";
 
 const Home = () => {
   return (
@@ -8,29 +8,60 @@ const Home = () => {
           <Box p={{ base: "1rem", lg: "2.5rem" }}>
             <Box
               py={"5rem"}
-              px={{ base: "1rem", lg: "10rem" }}
+              px={{ base: "0.8rem", lg: "10rem" }}
               textAlign={"center"}
             >
-              <img
-                className="object-contain h-28 mx-auto rounded-full"
+              <Image
                 src="src/assets/img/nigeria_flag.jpg"
+                alt="Nigeria Flag & Coat of Arms"
+                borderRadius="full"
+                boxSize="100px"
+                objectFit="cover"
+                mx={"auto"}
+                fallbackSrc="https://via.placeholder.com/150"
               />
-              <p className="text-6xl font-archivoBlack leading-snug text-ngDarkblue font-black pt-10 lg:px-4">
-                <span className="text-gray-600 text-4xl">#1</span> The
-                <span className="text-green-800"> Nigeria </span> Food Database
-                API
-              </p>
-              <p className="text-xl font-albertSans leading-relaxed text-gray-700 pt-10 lg:px-24 ">
+              <Text
+                // className="font-archivoBlack"
+                fontSize={{ base: "2.5rem", lg: "4rem" }}
+                overflow={"hidden"}
+                fontWeight={"900"}
+                lineHeight={"1.5"}
+                pt={"2.5rem"}
+                px={{ md: "1rem" }}
+                color={"ngDarkblue"}
+                fontFamily={"archivoBlack"}
+              >
+                <chakra.span color={"gray.600"} fontSize={"2rem"} pr={"1rem"}>
+                  #1
+                </chakra.span>
+                The
+                <chakra.span className="" color={"green.800"} px={"1rem"}>
+                  Nigeria
+                </chakra.span>
+                Food Database API
+              </Text>
+              <Text
+                fontSize={"1.25rem"}
+                fontFamily={"albertSans"}
+                lineHeight={"1.625"}
+                color={"gray.700"}
+                pt={"2.5rem"}
+                px={{ lg: "6rem" }}
+              >
                 Explore a rich collection of Nigerian recipes, ingredients,
                 <br />
                 and culinary traditions with our comprehensive <br />
                 Nigeria Food API database.
-              </p>
+              </Text>
             </Box>
           </Box>
         </Box>
-        <Box className="max-w-full min-h-screen bg-gradient-to-r from-green-900 via-green-800 to-green-900">
-          <Box className="p-4 lg:p-10"></Box>
+        <Box
+          w={"100%"}
+          minH={"100vh"}
+          bgGradient={"linear(to-r, green.900, green.800,  green.900)"}
+        >
+          <Box p={{ base: "1rem", lg: "2.5rem" }}></Box>
         </Box>
       </Box>
     </>

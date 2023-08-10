@@ -1,3 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans&family=Archivo+Black&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+width: .4em;
+}
+
+body::-webkit-scrollbar-track {
+box-shadow: inset 0 0 6px rgba(22 101 52, 0.6);
+}
+
+body::-webkit-scrollbar-thumb {
+background-color: #166534;
+outline: .1px solid #166534;
+}

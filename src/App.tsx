@@ -1,12 +1,12 @@
-import React from "react";
+import { Home } from "./collections/Index";
 
-type Props = {};
-
-const App = (props: Props) => {
+const App = () => {
   return (
-    <div>
-      <div> </div>
-    </div>
+    <>
+      <div>
+        <Home />
+      </div>
+    </>
   );
 };
 

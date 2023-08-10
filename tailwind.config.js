@@ -2,7 +2,15 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        archivoBlack: ["Archivo Black", "sans-serif"],
+        albertSans: ["Albert Sans", "sans-serif"],
+      },
+      colors: {
+        ngDarkblue: "#11132e",
+      },
+    },
   },
   plugins: [],
 };

@@ -1,4 +1,5 @@
-import { Box, Image, Text, chakra } from "@chakra-ui/react";
+import { Box, Image, Text, chakra, flex } from "@chakra-ui/react";
+import { MdOutlineFitbit } from "react-icons/md";
 
 const Home = () => {
   return (
@@ -21,7 +22,6 @@ const Home = () => {
                 fallbackSrc="https://via.placeholder.com/150"
               />
               <Text
-                // className="font-archivoBlack"
                 fontSize={{ base: "2.5rem", lg: "4rem" }}
                 overflow={"hidden"}
                 fontWeight={"900"}
@@ -47,6 +47,7 @@ const Home = () => {
                 color={"gray.700"}
                 pt={"2.5rem"}
                 px={{ lg: "6rem" }}
+                fontWeight={"600"}
               >
                 Explore a rich collection of Nigerian recipes, ingredients,
                 <br />
@@ -61,7 +62,21 @@ const Home = () => {
           minH={"100vh"}
           bgGradient={"linear(to-r, green.900, green.800,  green.900)"}
         >
-          <Box p={{ base: "1rem", lg: "2.5rem" }}></Box>
+          <Box p={{ base: "1rem", lg: "8rem" }}>
+            <Text
+              fontSize={"3.4rem"}
+              color={"white"}
+              fontWeight={"900"}
+              fontFamily={"overpass"}
+              display={"flex"}
+            >
+              <chakra.span pr={"1rem"}>
+                {" "}
+                <MdOutlineFitbit />{" "}
+              </chakra.span>{" "}
+              Features
+            </Text>
+          </Box>
         </Box>
       </Box>
     </>

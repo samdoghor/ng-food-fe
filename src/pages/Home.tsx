@@ -1,5 +1,5 @@
-import { Box, Image, Text, chakra, flex } from "@chakra-ui/react";
-import { MdOutlineFitbit } from "react-icons/md";
+import { Box, Image, Text, chakra } from "@chakra-ui/react";
+import { MdFingerprint } from "react-icons/md";
 
 const Home = () => {
   return (
@@ -22,12 +22,12 @@ const Home = () => {
                 fallbackSrc="https://via.placeholder.com/150"
               />
               <Text
-                fontSize={{ base: "2.5rem", lg: "4rem" }}
+                fontSize={{ base: "2.5rem", lg: "3.7rem" }}
                 overflow={"hidden"}
                 fontWeight={"900"}
                 lineHeight={"1.5"}
                 pt={"2.5rem"}
-                px={{ md: "1rem" }}
+                px={{ md: "4rem" }}
                 color={"ngDarkblue"}
                 fontFamily={"archivoBlack"}
               >
@@ -62,7 +62,7 @@ const Home = () => {
           minH={"100vh"}
           bgGradient={"linear(to-r, green.900, green.800,  green.900)"}
         >
-          <Box p={{ base: "1rem", lg: "8rem" }}>
+          <Box px={{ base: "1rem", lg: "8rem" }} py={{ lg: "12rem" }}>
             <Text
               fontSize={"3.4rem"}
               color={"white"}
@@ -70,12 +70,24 @@ const Home = () => {
               fontFamily={"overpass"}
               display={"flex"}
             >
-              <chakra.span pr={"1rem"}>
-                {" "}
-                <MdOutlineFitbit />{" "}
-              </chakra.span>{" "}
+              <chakra.span pr={"0.5rem"}>
+                <MdFingerprint />
+              </chakra.span>
               Features
             </Text>
+            <Box color={"white"} textAlign={"left"} fontSize={"1.25rem"}>
+              <Text
+                lineHeight={"2.2rem"}
+                letterSpacing={".1rem"}
+                fontFamily={"rambla"}
+              >
+                Fuel Your Culinary Creativity! Tailored for developers, chefs,
+                bakers, and more, the Nigeria Food Database API is your portal
+                to authentic flavors and vital nutritional insights. Elevate
+                your creations while celebrating Nigeria's diverse culinary
+                heritage.
+              </Text>
+            </Box>
           </Box>
         </Box>
       </Box>

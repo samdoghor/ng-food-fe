@@ -5,6 +5,7 @@ const theme = extendTheme({
         archivoBlack: `'Archivo Black', 'sans-serif'`,
         albertSans: `'Albert Sans', 'sans-serif'`,
         overpass: `'Overpass', 'sans-serif'`,
+        rambla: `'Rambla', 'sans-serif'`,
     },
     colors: {
         ngDarkblue: '#11132e',

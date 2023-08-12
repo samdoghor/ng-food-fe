@@ -1,11 +1,14 @@
 import { Box, Image, Text, chakra } from "@chakra-ui/react";
-import { MdFingerprint } from "react-icons/md";
+import { MdOutlineTipsAndUpdates, MdStorage } from "react-icons/md";
+import FeaturesCard from "../components/FeaturesCard";
+import GetAPI from "../components/GetAPI";
 
 const Home = () => {
   return (
     <>
       <Box>
-        <Box maxW="100vw" minH="100vh" mx="auto" bg="gray.50">
+        {/* Section One */}
+        <Box maxW="100vw" minH="100vh" mx="auto" bg="gray.100">
           <Box p={{ base: "1rem", lg: "2.5rem" }}>
             <Box
               py={"5rem"}
@@ -57,39 +60,70 @@ const Home = () => {
             </Box>
           </Box>
         </Box>
-        <Box
-          w={"100%"}
-          minH={"100vh"}
-          bgGradient={"linear(to-r, green.900, green.800,  green.900)"}
-        >
-          <Box px={{ base: "1rem", lg: "8rem" }} py={{ lg: "12rem" }}>
+
+        {/* Section Two */}
+        <FeaturesCard />
+
+        {/* Section Three */}
+        <Box w={"100%"} minH={"100vh"} bg="gray.100" id="tryitout">
+          <Box px={{ base: "1rem", lg: "8rem" }} py={{ lg: "8rem" }}>
             <Text
-              fontSize={"3.4rem"}
-              color={"white"}
+              fontSize={"2.4rem"}
+              color={"ngDarkblue"}
               fontWeight={"900"}
               fontFamily={"overpass"}
               display={"flex"}
             >
-              <chakra.span pr={"0.5rem"}>
-                <MdFingerprint />
+              <chakra.span pr={"1rem"} fontSize={"3rem"}>
+                <MdOutlineTipsAndUpdates />
               </chakra.span>
-              Features
+              Try it out
             </Text>
-            <Box color={"white"} textAlign={"left"} fontSize={"1.25rem"}>
+          </Box>
+        </Box>
+
+        {/* Section Four */}
+        <Box
+          w={"100%"}
+          minH={"100vh"}
+          bgGradient={"linear(to-r, green.900, green.800,  green.900)"}
+          id="tryitout"
+        >
+          <Box px={{ base: "1rem", lg: "8rem" }} py={{ lg: "8rem" }}>
+            <Text
+              fontSize={"2.4rem"}
+              color={"ngGreenlight"}
+              fontWeight={"900"}
+              fontFamily={"overpass"}
+              display={"flex"}
+            >
+              <chakra.span pr={"1rem"} fontSize={"3rem"}>
+                <MdStorage />
+              </chakra.span>
+              Database Statistics
+            </Text>
+
+            <Box
+              color={"ngOffwhite"}
+              textAlign={"left"}
+              fontSize={"1.1rem"}
+              pt={"1rem"}
+            >
               <Text
-                lineHeight={"2.2rem"}
-                letterSpacing={".1rem"}
-                fontFamily={"rambla"}
+                lineHeight={"1.8rem"}
+                letterSpacing={".08rem"}
+                fontFamily={"albertSans"}
               >
-                Fuel Your Culinary Creativity! Tailored for developers, chefs,
-                bakers, and more, the Nigeria Food Database API is your portal
-                to authentic flavors and vital nutritional insights. Elevate
-                your creations while celebrating Nigeria's diverse culinary
-                heritage.
+                Your Ultimate Nigerian Food Database! Access extensive Nigerian
+                dish info, easy integration and powerful search. The API is
+                maintained by our wonderful volunteer community.
               </Text>
             </Box>
           </Box>
         </Box>
+
+        {/* Get API Key */}
+        <GetAPI />
       </Box>
     </>
   );

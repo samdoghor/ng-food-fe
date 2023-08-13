@@ -35,13 +35,15 @@ const Footer = () => {
                       key={index}
                       pb={".6rem"}
                       fontFamily={"heebo"}
-                      transition={".7s"}
+                      transition={"5s"}
                       _hover={{
                         transform: "scale(0.95)",
-                        transition: ".7s",
+                        transition: "5s",
                       }}
                     >
-                      <Link href={link.url}>{link.label}</Link>
+                      <Link href={link.url} isExternal={link.external === true}>
+                        {link.label}
+                      </Link>
                     </chakra.p>
                   ))}
                 </Text>

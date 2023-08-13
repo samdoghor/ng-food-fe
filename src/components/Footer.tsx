@@ -31,7 +31,16 @@ const Footer = () => {
                 </Text>
                 <Text fontSize={"1rem"} pb={".8rem"}>
                   {section.link.map((link, index) => (
-                    <chakra.p key={index} pb={".6rem"} fontFamily={"heebo"}>
+                    <chakra.p
+                      key={index}
+                      pb={".6rem"}
+                      fontFamily={"heebo"}
+                      transition={".7s"}
+                      _hover={{
+                        transform: "scale(0.95)",
+                        transition: ".7s",
+                      }}
+                    >
                       <Link href={link.url}>{link.label}</Link>
                     </chakra.p>
                   ))}

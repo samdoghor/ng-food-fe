@@ -24,7 +24,7 @@ export const Footerlinks = [
             {
                 id: 2,
                 label: 'Documentation',
-                url: '/tos',
+                url: '/docs',
                 external: 'False',
             },
             {

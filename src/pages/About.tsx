@@ -4,7 +4,7 @@ import { useEffect } from "react";
 const About = () => {
   useEffect(() => {
     document.title = "About | The Nigeria Food API";
-  });
+  }, []);
 
   return (
     <>

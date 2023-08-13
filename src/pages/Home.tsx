@@ -2,8 +2,13 @@ import { Box, Image, Text, chakra } from "@chakra-ui/react";
 import { MdOutlineTipsAndUpdates, MdStorage } from "react-icons/md";
 import FeaturesCard from "../components/FeaturesCard";
 import GetAPI from "../components/GetAPI";
+import { useEffect } from "react";
 
 const Home = () => {
+  useEffect(() => {
+    document.title = "Home | The Nigeria Food API";
+  });
+
   return (
     <>
       <Box>

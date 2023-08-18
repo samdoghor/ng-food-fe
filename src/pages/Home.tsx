@@ -16,8 +16,8 @@ const Home = () => {
         <Box maxW="100vw" minH="100vh" mx="auto" bg="gray.100">
           <Box p={{ base: "1rem", lg: "2.5rem" }}>
             <Box
-              py={"5rem"}
-              px={{ base: "0.8rem", lg: "10rem" }}
+              py={"3rem"}
+              px={{ base: "0.8rem", lg: "8rem" }}
               textAlign={"center"}
             >
               <Image
@@ -70,7 +70,7 @@ const Home = () => {
         <FeaturesCard />
 
         {/* Section Three */}
-        <Box w={"100%"} minH={"100vh"} bg="gray.100" id="tryitout">
+        <Box w={"100%"} minH={"100vh"} bg="gray.100" id="tryit">
           <Box px={{ base: "1rem", lg: "8rem" }} py={{ lg: "8rem" }}>
             <Text
               fontSize={"2.4rem"}

@@ -1,6 +1,6 @@
 # Nigeria Food API Frontend
 
-This is the frontend repository for the `Nigeria Food API project`. It is built with Vite, React, TypeScript, and Tailwind CSS. The frontend provides a user interface to interact with the Nigerian Food Database API and display information about various Nigerian dishes, their ingredients, and nutritional values.
+This is the frontend repository for the `Nigeria Food API project`. It is built with Vite, React, TypeScript, and Chakra-UI. The frontend provides a user interface to interact with the Nigerian Food Database API and display information about various Nigerian dishes, their ingredients, and nutritional values.
 
 ## Related Repo
 

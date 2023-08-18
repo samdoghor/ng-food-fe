@@ -35,10 +35,10 @@ const Footer = () => {
                       key={index}
                       pb={".6rem"}
                       fontFamily={"heebo"}
-                      transition={"5s"}
+                      transition={".5s"}
                       _hover={{
                         transform: "scale(0.95)",
-                        transition: "5s",
+                        transition: ".ss",
                       }}
                     >
                       <Link href={link.url} isExternal={link.external === true}>

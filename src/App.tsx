@@ -6,9 +6,11 @@ import Navigation from "./components/Navigation";
 const App = () => {
   return (
     <>
-      <Router />
       <Box>
         <Navigation />
+      </Box>
+      <Router />
+      <Box>
         <Footer />
       </Box>
     </>

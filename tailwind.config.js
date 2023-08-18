@@ -1,16 +1,13 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+    "node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}",
+  ],
   theme: {
-    extend: {
-      fontFamily: {
-        archivoBlack: ["Archivo Black", "sans-serif"],
-        albertSans: ["Albert Sans", "sans-serif"],
-      },
-      colors: {
-        ngDarkblue: "#11132e",
-      },
-    },
+    extend: {},
   },
-  plugins: [],
+  // eslint-disable-next-line no-undef
+  plugins: [require("flowbite/plugin")],
 };

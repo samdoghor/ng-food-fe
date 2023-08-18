@@ -1,5 +1,5 @@
 import { Routes, Route } from "react-router-dom";
-import { Home, About, Privacy, Terms, NotFound } from "./Index";
+import { Home, About, Privacy, Terms, NotFound, SignUp } from "./Index";
 
 const Router = () => {
   return (
@@ -9,6 +9,7 @@ const Router = () => {
         <Route path="/about" element={<About />} />
         <Route path="/privacy" element={<Privacy />} />
         <Route path="/tos" element={<Terms />} />
+        <Route path="/signup" element={<SignUp />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </>

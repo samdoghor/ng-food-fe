@@ -6,7 +6,7 @@ import { useEffect } from "react";
 
 const Home = () => {
   useEffect(() => {
-    document.title = "Home | The Nigeria Food API";
+    document.title = "The Nigeria Food API | Home";
   }, []);
 
   return (

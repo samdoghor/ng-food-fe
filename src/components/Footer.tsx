@@ -9,7 +9,7 @@ const Footer = () => {
         {/* Section One */}
         <Box
           px={{ base: "1rem", lg: "8rem" }}
-          py={{ lg: "4rem" }}
+          pt={{ lg: "4rem" }}
           display={"flex"}
           alignItems="center"
           justifyContent="center"

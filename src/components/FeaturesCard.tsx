@@ -1,5 +1,6 @@
 import { Box, Text, chakra } from "@chakra-ui/react";
 import { MdFingerprint } from "react-icons/md";
+import { features } from "../constants/features";
 
 const FeaturesCard = () => {
   return (
@@ -10,7 +11,7 @@ const FeaturesCard = () => {
         bgGradient={"linear(to-r, green.900, green.800,  green.900)"}
         id="features"
       >
-        <Box px={{ base: "1rem", lg: "8rem" }} py={{ lg: "8rem" }}>
+        <Box px={{ base: "1rem", lg: "8rem" }} py={"8rem"}>
           <Text
             fontSize={"2.4rem"}
             color={"ngGreenlight"}
@@ -45,35 +46,39 @@ const FeaturesCard = () => {
             <Box
               display={"grid"}
               gridGap={"8"}
-              gridTemplateColumns="repeat(3, 1fr)"
+              gridTemplateColumns={{
+                lg: "repeat(3, 1fr)",
+                md: "repeat(2, 1fr)",
+              }}
             >
-              <Box
-                backgroundColor={"ngDarkgreen"}
-                p={"1.8rem"}
-                rounded={"1rem"}
-                boxShadow="2xl"
-              >
-                <Text
-                  color={"ngGreenlight"}
-                  fontSize={"1.5rem"}
-                  pb={"1rem"}
-                  fontFamily={"heebo"}
-                  letterSpacing={".2rem"}
-                  fontWeight={700}
+              {features.map((features, index) => (
+                <Box
+                  backgroundColor={"ngDarkgreen"}
+                  p={"1.8rem"}
+                  rounded={"1rem"}
+                  boxShadow="2xl"
+                  key={index}
                 >
-                  Heading 1
-                </Text>
-                <Text
-                  color={"white"}
-                  fontFamily={"albertSans"}
-                  letterSpacing={".1rem"}
-                  fontSize={"1rem"}
-                >
-                  Effortlessly access our dummy food database API for culinary
-                  information. Simple integration, rich data. Enhance your app
-                  today!
-                </Text>
-              </Box>
+                  <Text
+                    color={"ngGreenlight"}
+                    fontSize={"1.2rem"}
+                    pb={"1rem"}
+                    fontFamily={"heebo"}
+                    letterSpacing={".2rem"}
+                    fontWeight={700}
+                  >
+                    {features.title}
+                  </Text>
+                  <Text
+                    color={"white"}
+                    fontFamily={"albertSans"}
+                    letterSpacing={".1rem"}
+                    fontSize={".9rem"}
+                  >
+                    {features.details}
+                  </Text>
+                </Box>
+              ))}
             </Box>
           </Box>
         </Box>

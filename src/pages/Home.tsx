@@ -6,7 +6,7 @@ import { useEffect } from "react";
 
 const Home = () => {
   useEffect(() => {
-    document.title = "Home | The Nigeria Food API";
+    document.title = "The Nigeria Food API | Home";
   }, []);
 
   return (
@@ -14,7 +14,7 @@ const Home = () => {
       <Box>
         {/* Section One */}
         <Box maxW="100vw" minH="100vh" mx="auto" bg="gray.100">
-          <Box p={{ base: "1rem", lg: "2.5rem" }}>
+          <Box p={{ base: "1rem", lg: "2.5rem" }} mt={"4rem"}>
             <Box
               py={"3rem"}
               px={{ base: "0.8rem", lg: "8rem" }}
@@ -71,7 +71,7 @@ const Home = () => {
 
         {/* Section Three */}
         <Box w={"100%"} minH={"100vh"} bg="gray.100" id="tryit">
-          <Box px={{ base: "1rem", lg: "8rem" }} py={{ lg: "8rem" }}>
+          <Box px={{ base: "1rem", lg: "8rem" }} py={"8rem"}>
             <Text
               fontSize={"2.4rem"}
               color={"ngDarkblue"}
@@ -94,7 +94,7 @@ const Home = () => {
           bgGradient={"linear(to-r, green.900, green.800,  green.900)"}
           id="tryitout"
         >
-          <Box px={{ base: "1rem", lg: "8rem" }} py={{ lg: "8rem" }}>
+          <Box px={{ base: "1rem", lg: "8rem" }} py={"8rem"}>
             <Text
               fontSize={"2.4rem"}
               color={"ngGreenlight"}

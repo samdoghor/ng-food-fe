@@ -3,21 +3,23 @@ import { Footerlinks } from "../constants/footer";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
 
 const Footer = () => {
+  // const currentYear = new Date().getFullYear();
+
   return (
     <>
-      <Box maxW="100vw" mx="auto" bg="white">
+      <Box maxW="100vw" mx="auto" bg="white" pb={{ lg: "2rem" }}>
         {/* Section One */}
         <Box
           px={{ base: "1rem", lg: "8rem" }}
-          pt={{ lg: "4rem" }}
+          pt={"4rem"}
           display={"flex"}
           alignItems="center"
           justifyContent="center"
         >
           <Box
             display={"grid"}
-            gridGap={"40"}
-            gridTemplateColumns="repeat(3, 1fr)"
+            gridGap={{ base: "10", lg: "40" }}
+            gridTemplateColumns={{ md: "repeat(2, 1fr)", lg: "repeat(3, 1fr)" }}
           >
             {Footerlinks.map((section) => (
               <Box key={section.id}>
@@ -56,15 +58,15 @@ const Footer = () => {
         <Box
           px={{ base: "1rem", lg: "8rem" }}
           display={"flex"}
-          pb={{ lg: "2rem" }}
           alignItems="center"
           justifyContent="center"
+          pb={"2rem"}
         >
           <Image
             src="src/assets/img/nigeria_flag.jpg"
             alt="Nigeria Flag & Coat of Arms"
             borderRadius="full"
-            boxSize="60px"
+            boxSize={{ base: "35px", lg: "40px" }}
             objectFit="cover"
             fallbackSrc="https://via.placeholder.com/150"
           />
@@ -81,6 +83,16 @@ const Footer = () => {
             </Link>
           </Text>
         </Box>
+
+        {/* <Box
+          px={{ base: "1rem", lg: "8rem" }}
+          display={"flex"}
+          pb={{ lg: "2rem" }}
+          alignItems="center"
+          justifyContent="center"
+        >
+          <Text>All right reserved © Samuel Doghor {currentYear}</Text>
+        </Box> */}
       </Box>
     </>
   );

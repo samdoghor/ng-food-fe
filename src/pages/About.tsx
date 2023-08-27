@@ -13,7 +13,7 @@ const About = () => {
     <>
       <Box>
         <Box w={"100%"} minH={"100vh"} bg="gray.100" id="tryit">
-          <Box px={{ base: "1rem", lg: "8rem" }} py={{ lg: "4rem" }}>
+          <Box px={{ base: "1rem", lg: "8rem" }} py={"4rem"}>
             <Box>
               <Text
                 fontSize={"2.4rem"}
@@ -21,6 +21,7 @@ const About = () => {
                 fontWeight={"900"}
                 fontFamily={"overpass"}
                 display={"flex"}
+                mt={"4rem"}
               >
                 About
               </Text>

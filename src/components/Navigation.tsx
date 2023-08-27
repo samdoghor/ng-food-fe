@@ -8,8 +8,12 @@ const Navigation = () => {
     <>
       <Box
         bg={"gray.100"}
+        opacity={".95"}
         px={{ base: "1rem", lg: "5rem" }}
         textAlign={"center"}
+        position={"fixed"}
+        width={"100vw"}
+        zIndex={1000}
       >
         <Flowbite theme={{ theme: customTheme }}>
           <Navbar fluid rounded>

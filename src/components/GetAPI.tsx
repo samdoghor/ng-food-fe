@@ -4,7 +4,7 @@ const GetAPI = () => {
   return (
     <>
       <Box maxW="100vw" mx="auto" bg="gray.50">
-        <Box px={{ base: "1rem", lg: "8rem" }} py={{ lg: "8rem" }}>
+        <Box px={{ base: "1rem", lg: "8rem" }} py={"4rem"}>
           <Text
             textAlign={"center"}
             fontFamily={"overpass"}

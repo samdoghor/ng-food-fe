@@ -1,6 +1,34 @@
 import { Box, Text, Link, chakra, Image } from "@chakra-ui/react";
 import { Footerlinks } from "../constants/footer";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
+import { motion } from "framer-motion";
+
+const imgVariant = {
+  initial: {
+    opacity: 0,
+  },
+  animate: {
+    opacity: 1,
+    rotate: 360,
+    transition: {
+      delay: 0.5,
+      duration: 1.5,
+    },
+  },
+};
+
+const textVariant = {
+  initial: {
+    opacity: 0,
+  },
+  animate: {
+    opacity: 1,
+    transition: {
+      delay: 0.5,
+      duration: 2,
+    },
+  },
+};
 
 const Footer = () => {
   // const currentYear = new Date().getFullYear();
@@ -17,9 +45,14 @@ const Footer = () => {
           justifyContent="center"
         >
           <Box
+            viewport={{ once: true }}
+            as={motion.div}
             display={"grid"}
             gridGap={{ base: "10", lg: "40" }}
             gridTemplateColumns={{ md: "repeat(2, 1fr)", lg: "repeat(3, 1fr)" }}
+            variants={textVariant}
+            initial="initial"
+            whileInView="animate"
           >
             {Footerlinks.map((section) => (
               <Box key={section.id}>
@@ -63,14 +96,28 @@ const Footer = () => {
           pb={"2rem"}
         >
           <Image
+            viewport={{ once: true }}
+            as={motion.img}
             src="src/assets/img/nigeria_flag.jpg"
             alt="Nigeria Flag & Coat of Arms"
             borderRadius="full"
             boxSize={{ base: "35px", lg: "40px" }}
             objectFit="cover"
             fallbackSrc="https://via.placeholder.com/150"
+            variants={imgVariant}
+            initial="initial"
+            whileInView="animate"
           />
-          <Text color={"ngGreenvid"} pl={"1.5rem"} fontWeight={500}>
+          <Text
+            color={"ngGreenvid"}
+            pl={"1.5rem"}
+            fontWeight={500}
+            viewport={{ once: true }}
+            as={motion.p}
+            variants={textVariant}
+            initial="initial"
+            whileInView="animate"
+          >
             Proudly developed by
             <Link
               href="https://www.samdoghor.com"

@@ -54,7 +54,7 @@ const About = () => {
                 color={"ngGreenvid"}
                 fontWeight={500}
                 pt={"2rem"}
-                fontSize={"1.4rem"}
+                fontSize={"1.2rem"}
               >
                 Proudly developed by
                 <Link

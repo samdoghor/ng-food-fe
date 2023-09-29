@@ -38,6 +38,15 @@ const Navigation = () => {
                     fontSize={"1.1rem"}
                     overflow={"hidden"}
                     lineHeight={"1.5rem"}
+                    paddingX={"1rem"}
+                    paddingY={".6rem"}
+                    backgroundColor={routes.backgroundColor}
+                    textColor={routes.textColor}
+                    rounded={routes.rounded}
+                    _hover={{
+                      backgroundColor: routes.hoverbackgroundColor,
+                      textColor: routes.hovertextColor,
+                    }}
                   >
                     {routes.element}
                   </Text>

@@ -24,6 +24,11 @@ export const Navlinks = [
     {
         id: 5,
         path: "/#tryit",
-        element: "Try it out"
+        element: "Try it out",
+        backgroundColor: "green.800",
+        textColor: "white",
+        rounded: "xl",
+        hoverbackgroundColor: "green.900",
+        hovertextColor: "gray.300"
     },
 ]

@@ -1,16 +1,38 @@
 import { Box, Text, Button } from "@chakra-ui/react";
+import { motion } from "framer-motion";
+
+const textVariant2 = {
+  initial: {
+    opacity: 0,
+    y: 20,
+  },
+  animate: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      delay: 0.8,
+      duration: 0.8,
+    },
+  },
+};
 
 const GetAPI = () => {
   return (
     <>
       <Box maxW="100vw" mx="auto" bg="gray.50">
-        <Box px={{ base: "1rem", lg: "8rem" }} py={"4rem"}>
+        <Box px={{ base: "1rem", lg: "8rem" }} py={"4rem"} overflow={"hidden"}>
           <Text
+            viewport={{ once: true }}
+            as={motion.p}
             textAlign={"center"}
             fontFamily={"overpass"}
             fontWeight={500}
             fontSize={"1.4rem"}
             pb={"3rem"}
+            overflow={"hidden"}
+            variants={textVariant2}
+            initial="initial"
+            whileInView="animate"
           >
             Like what you see? Sign up for an API Key!
           </Text>
@@ -19,8 +41,11 @@ const GetAPI = () => {
             display="flex"
             alignItems="center"
             justifyContent="center"
+            overflow={"hidden"}
           >
             <Button
+              viewport={{ once: true }}
+              as={motion.button}
               bg="ngDarkgreen"
               color={"white"}
               p={"1.5rem"}
@@ -32,6 +57,10 @@ const GetAPI = () => {
                 transition: ".7s",
               }}
               fontWeight="semibold"
+              overflow={"hidden"}
+              variants={textVariant2}
+              initial="initial"
+              whileInView="animate"
             >
               Get an API Key
             </Button>

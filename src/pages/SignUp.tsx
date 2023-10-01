@@ -113,10 +113,10 @@ const SignUp = () => {
                       <Button
                         size="lg"
                         onClick={handleClick}
-                        fontSize={"3rem"}
+                        fontSize={"2rem"}
                         backgroundColor={"green.800"}
                         textColor={"white"}
-                        rounded={"none"}
+                        roundedRight={"md"}
                         _hover={{
                           backgroundColor: "green.900",
                           textColor: "gray.300",

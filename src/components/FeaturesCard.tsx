@@ -84,7 +84,7 @@ const FeaturesCard = () => {
           <Box pt={"6rem"}>
             <Box
               display={"grid"}
-              gridGap={"8"}
+              gridGap={"5rem"}
               overflow={"hidden"}
               gridTemplateColumns={{
                 lg: "repeat(3, 1fr)",

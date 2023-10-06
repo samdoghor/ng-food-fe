@@ -6,6 +6,8 @@ This is the frontend repository for the `Nigeria Food API project`. It is built 
 
 [Backend](https://github.com/samdoghor/ng-food-api) of the Nigeria Food APIs
 
+[Admin](https://github.com/samdoghor/ng-food-admin) of the Nigeria Food APIs
+
 ## Installation
 
 To run the frontend locally, follow these steps:
@@ -13,13 +15,13 @@ To run the frontend locally, follow these steps:
 ### Clone the repository
 
 ```bash Copy code
-git clone https://github.com/samdoghor/ngfood_fe.git
+git clone https://github.com/samdoghor/ng-food-fe.git
 ```
 
 ### Navigate to the project directory
 
 ```bash Copy code
-cd ngfood_fe
+cd ng-food-fe
 ```
 
 ### Install dependencies

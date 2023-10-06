@@ -84,8 +84,8 @@ const SignUp = () => {
                   lineHeight={"2rem"}
                   overflow={"hidden"}
                 >
-                  Provide some of your information so we can grant you access to
-                  the Nigeria Food Database API.
+                  Please share some of your details with us so that we can
+                  authorize your access to the Nigeria Food Database API.
                 </Text>
                 <Stack spacing={2} pt={"2rem"} overflow={"hidden"}>
                   <Text fontWeight={600} fontSize={"1.2rem"} pt={"1.2rem"}>
@@ -147,28 +147,15 @@ const SignUp = () => {
                 </Stack>
               </Box>
               <Box
-                color={"ngOffwhite"}
+                backgroundImage="url('/img/nigeria_flag_2.png')"
+                backgroundPosition="center"
+                backgroundRepeat="no-repeat"
+                backgroundSize={"cover"}
                 textAlign={"left"}
                 fontSize={"1.1rem"}
                 pt={"1rem"}
-              >
-                <Text
-                  viewport={{ once: true }}
-                  as={motion.p}
-                  lineHeight={"1.8rem"}
-                  letterSpacing={".08rem"}
-                  fontFamily={"albertSans"}
-                  variants={textVariant}
-                  initial="initial"
-                  whileInView="animate"
-                >
-                  Fuel Your Culinary Creativity! Tailored for developers, chefs,
-                  bakers, and more, the Nigeria Food Database API is your portal
-                  to authentic flavors and vital nutritional insights. Elevate
-                  your creations while celebrating Nigeria's diverse culinary
-                  heritage.
-                </Text>
-              </Box>
+                display={{ base: "none", md: "block" }}
+              ></Box>
             </Box>
           </Box>
         </Box>

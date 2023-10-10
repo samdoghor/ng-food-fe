@@ -4,6 +4,7 @@ import FeaturesCard from "../components/FeaturesCard";
 import GetAPI from "../components/GetAPI";
 import { useEffect } from "react";
 import { motion } from "framer-motion";
+import APIExample from "../components/APIExample";
 
 const imgVariant = {
   initial: {
@@ -147,6 +148,20 @@ const Home = () => {
               </chakra.span>
               Try it out
             </Text>
+            <Text
+              viewport={{ once: true }}
+              as={motion.p}
+              fontSize={"1.2rem"}
+              fontFamily={"albertSans"}
+              color={"ngDarkblue"}
+              py={"1.1rem"}
+              variants={textVariant}
+              initial="initial"
+              whileInView="animate"
+            >
+              With each API key, you will get x requests per day.
+            </Text>
+            <APIExample />
           </Box>
         </Box>
 

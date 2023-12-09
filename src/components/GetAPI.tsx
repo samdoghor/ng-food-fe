@@ -1,4 +1,4 @@
-import { Box, Text, Button } from "@chakra-ui/react";
+import { Box, Text, Button, Link } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 
 const textVariant2 = {
@@ -43,27 +43,29 @@ const GetAPI = () => {
             justifyContent="center"
             overflow={"hidden"}
           >
-            <Button
-              viewport={{ once: true }}
-              as={motion.button}
-              bg="ngDarkgreen"
-              color={"white"}
-              p={"1.5rem"}
-              transition={".7s"}
-              _hover={{
-                bg: "ngGreenvid",
-                color: "ngOffwhite",
-                transform: "scale(0.9)",
-                transition: ".7s",
-              }}
-              fontWeight="semibold"
-              overflow={"hidden"}
-              variants={textVariant2}
-              initial="initial"
-              whileInView="animate"
-            >
-              Get an API Key
-            </Button>
+            <Link href="/signup" overflow={"hidden"}>
+              <Button
+                viewport={{ once: true }}
+                as={motion.button}
+                bg="ngDarkgreen"
+                color={"white"}
+                p={"1.5rem"}
+                transition={".7s"}
+                _hover={{
+                  bg: "ngGreenvid",
+                  color: "ngOffwhite",
+                  transform: "scale(0.9)",
+                  transition: ".7s",
+                }}
+                fontWeight="semibold"
+                overflow={"hidden"}
+                variants={textVariant2}
+                initial="initial"
+                whileInView="animate"
+              >
+                Get an API Key
+              </Button>
+            </Link>
           </Box>
         </Box>
       </Box>

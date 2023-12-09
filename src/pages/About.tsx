@@ -1,8 +1,7 @@
-import { Box, Text, Link } from "@chakra-ui/react";
+import { Box, Text } from "@chakra-ui/react";
 import { useEffect } from "react";
 import { AboutContent } from "../constants/about";
 import GetAPI from "../components/GetAPI";
-import { ExternalLinkIcon } from "@chakra-ui/icons";
 import { motion } from "framer-motion";
 
 const textVariant = {
@@ -14,21 +13,6 @@ const textVariant = {
     transition: {
       delay: 0.5,
       duration: 2,
-    },
-  },
-};
-
-const textVariant2 = {
-  initial: {
-    opacity: 0,
-    y: 20,
-  },
-  animate: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      delay: 0.8,
-      duration: 1,
     },
   },
 };
@@ -86,33 +70,6 @@ const About = () => {
                   </Text>
                 </>
               ))}
-            </Box>
-
-            <Box overflow={"hidden"}>
-              <Text
-                color={"ngGreenvid"}
-                fontWeight={500}
-                pt={"2rem"}
-                fontSize={"1.2rem"}
-                as={motion.p}
-                viewport={{ once: true }}
-                variants={textVariant2}
-                initial="initial"
-                whileInView="animate"
-                overflow={"hidden"}
-              >
-                Proudly developed by
-                <Link
-                  href="https://www.samdoghor.com"
-                  pl={".4rem"}
-                  fontWeight={900}
-                  color={"green.900"}
-                  isExternal
-                  overflow={"hidden"}
-                >
-                  Samuel, Doghor Destiny <ExternalLinkIcon mx="2px" />
-                </Link>
-              </Text>
             </Box>
           </Box>
         </Box>

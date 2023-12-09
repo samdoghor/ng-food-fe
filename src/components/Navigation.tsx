@@ -47,9 +47,9 @@ const Navigation = () => {
                 color={"ngDarkblue"}
               >
                 <chakra.span color={"green.800"} fontSize={"2rem"}>
-                  9ja
+                  NIFDA
                 </chakra.span>
-                Food API
+                .com
               </chakra.span>
             </Navbar.Brand>
             <Navbar.Toggle />
@@ -57,7 +57,7 @@ const Navigation = () => {
               {Navlinks.map((routes) => (
                 <Navbar.Link key={routes.id} href={routes.path}>
                   <Text
-                    fontSize={"1.1rem"}
+                    fontSize={"1rem"}
                     overflow={"hidden"}
                     lineHeight={"1.5rem"}
                     paddingX={"1rem"}

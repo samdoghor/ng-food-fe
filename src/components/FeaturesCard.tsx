@@ -76,7 +76,7 @@ const FeaturesCard = () => {
             >
               Fuel Your Culinary Creativity! Tailored for developers, chefs,
               bakers, and more, the Nigeria Food Database API is your portal to
-              authentic flavors and vital nutritional insights. Elevate your
+              authentic flavours and vital nutritional insights. Elevate your
               creations while celebrating Nigeria's diverse culinary heritage.
             </Text>
           </Box>

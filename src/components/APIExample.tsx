@@ -3,7 +3,7 @@ import { Box, Text } from "@chakra-ui/react";
 const APIExample = () => {
   return (
     <>
-      <Box w={"100%"} minH={"100vh"} id="tryit">
+      <Box w={"100%"} minH={"100vh"}>
         <Box py={"1.2rem"}>
           <Box>
             <Box

@@ -4,12 +4,12 @@ export const Navlinks = [
     {
         id: 1,
         path: "/#features",
-        element: "Features"
+        element: "Features",
     },
     {
         id: 2,
-        path: "/about",
-        element: "About"
+        path: "/#example",
+        element: "API Example",
     },
     {
         id: 3,
@@ -18,13 +18,18 @@ export const Navlinks = [
     },
     {
         id: 4,
+        path: "/about",
+        element: "About"
+    },
+    {
+        id: 4,
         path: "/signup",
         element: "Get Api Key"
     },
     {
         id: 5,
-        path: "/#tryit",
-        element: "Try it out",
+        path: "/data",
+        element: " Nutri Data",
         backgroundColor: "green.800",
         textColor: "white",
         rounded: "xl",

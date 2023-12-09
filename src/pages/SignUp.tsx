@@ -6,6 +6,7 @@ import {
   Button,
   InputGroup,
   InputRightElement,
+  FormControl,
 } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
@@ -87,64 +88,66 @@ const SignUp = () => {
                   Please share some of your details with us so that we can
                   authorize your access to the Nigeria Food Database API.
                 </Text>
-                <Stack spacing={2} pt={"2rem"} overflow={"hidden"}>
-                  <Text fontWeight={600} fontSize={"1.2rem"} pt={"1.2rem"}>
-                    First name
-                  </Text>
-                  <Input placeholder="First Name" size="lg" type="text" />
-                  <Text fontWeight={600} fontSize={"1.2rem"} pt={"1.2rem"}>
-                    Last name
-                  </Text>
-                  <Input placeholder="Last Name" size="lg" type="text" />
-                  <Text fontWeight={600} fontSize={"1.2rem"} pt={"1.2rem"}>
-                    Email address
-                  </Text>
-                  <Input placeholder="Email address" size="lg" type="email" />
-                  <Text fontWeight={600} fontSize={"1.2rem"} pt={"1.2rem"}>
-                    Password
-                  </Text>
-                  <InputGroup size="lg">
-                    <Input
-                      pr="4.5rem"
-                      type={show ? "text" : "password"}
-                      placeholder="Enter password"
-                    />
-                    <InputRightElement width="4.5rem">
-                      <Button
-                        size="lg"
-                        onClick={handleClick}
-                        fontSize={"2rem"}
-                        backgroundColor={"green.800"}
-                        textColor={"white"}
-                        roundedRight={"md"}
-                        _hover={{
-                          backgroundColor: "green.900",
-                          textColor: "gray.300",
-                        }}
-                      >
-                        {show ? <PiEyeBold /> : <PiEyeClosedBold />}
-                      </Button>
-                    </InputRightElement>
-                  </InputGroup>
+                <FormControl>
+                  <Stack spacing={2} pt={"2rem"} overflow={"hidden"}>
+                    <Text fontWeight={600} fontSize={"1.2rem"} pt={"1.2rem"}>
+                      First name
+                    </Text>
+                    <Input placeholder="First Name" size="lg" type="text" />
+                    <Text fontWeight={600} fontSize={"1.2rem"} pt={"1.2rem"}>
+                      Last name
+                    </Text>
+                    <Input placeholder="Last Name" size="lg" type="text" />
+                    <Text fontWeight={600} fontSize={"1.2rem"} pt={"1.2rem"}>
+                      Email address
+                    </Text>
+                    <Input placeholder="Email address" size="lg" type="email" />
+                    <Text fontWeight={600} fontSize={"1.2rem"} pt={"1.2rem"}>
+                      Password
+                    </Text>
+                    <InputGroup size="lg">
+                      <Input
+                        pr="4.5rem"
+                        type={show ? "text" : "password"}
+                        placeholder="Enter password"
+                      />
+                      <InputRightElement width="4.5rem">
+                        <Button
+                          size="lg"
+                          onClick={handleClick}
+                          fontSize={"2rem"}
+                          backgroundColor={"green.800"}
+                          textColor={"white"}
+                          roundedRight={"md"}
+                          _hover={{
+                            backgroundColor: "green.900",
+                            textColor: "gray.300",
+                          }}
+                        >
+                          {show ? <PiEyeBold /> : <PiEyeClosedBold />}
+                        </Button>
+                      </InputRightElement>
+                    </InputGroup>
 
-                  <Button
-                    mt={"2rem"}
-                    backgroundColor={"green.800"}
-                    textColor={"white"}
-                    _hover={{
-                      backgroundColor: "green.900",
-                      textColor: "gray.300",
-                    }}
-                    size="lg"
-                    as={motion.button}
-                    viewport={{ once: true }}
-                    variants={textVariant2}
-                    initial="initial"
-                    whileInView="animate"
-                  >
-                    Create Account
-                  </Button>
-                </Stack>
+                    <Button
+                      mt={"2rem"}
+                      backgroundColor={"green.800"}
+                      textColor={"white"}
+                      _hover={{
+                        backgroundColor: "green.900",
+                        textColor: "gray.300",
+                      }}
+                      size="lg"
+                      as={motion.button}
+                      viewport={{ once: true }}
+                      variants={textVariant2}
+                      initial="initial"
+                      whileInView="animate"
+                    >
+                      Create Account
+                    </Button>
+                  </Stack>
+                </FormControl>
               </Box>
               <Box
                 backgroundImage="url('/img/nigeria_flag_2.png')"

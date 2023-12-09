@@ -7,7 +7,7 @@ export const features = [
     {
         id: 2,
         title: 'Dish Categorization',
-        details: 'Access dish categories for better app organization.'
+        details: 'Access dish categories for better app organisation.'
     },
     {
         id: 3,

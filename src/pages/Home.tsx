@@ -94,13 +94,13 @@ const Home = () => {
                 whileInView="animate"
               >
                 <chakra.span color={"gray.600"} fontSize={"2rem"} pr={"1rem"}>
-                  #1
+                  <chakra.sub>#1</chakra.sub>
                 </chakra.span>
                 The
                 <chakra.span className="" color={"green.800"} px={"1rem"}>
                   Nigeria
                 </chakra.span>
-                Food Database API
+                Food Database API (NIFDA)
               </Text>
               <Text
                 viewport={{ once: true }}
@@ -129,7 +129,7 @@ const Home = () => {
         <FeaturesCard />
 
         {/* Section Three */}
-        <Box w={"100%"} minH={"100vh"} bg="gray.100" id="tryit">
+        <Box w={"100%"} minH={"100vh"} bg="gray.100" id="example">
           <Box px={{ base: "1rem", lg: "8rem" }} py={"8rem"}>
             <Text
               viewport={{ once: true }}

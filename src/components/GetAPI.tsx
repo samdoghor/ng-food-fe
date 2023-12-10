@@ -47,7 +47,7 @@ const GetAPI = () => {
               <Button
                 viewport={{ once: true }}
                 as={motion.button}
-                bg="ngDarkgreen"
+                bg="ngDarkblue"
                 color={"white"}
                 p={"1.5rem"}
                 transition={".7s"}

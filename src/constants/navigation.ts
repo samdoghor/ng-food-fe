@@ -30,10 +30,10 @@ export const Navlinks = [
         id: 5,
         path: "/data",
         element: " Nutri Data",
-        backgroundColor: "green.800",
+        backgroundColor: "ngDarkblue",
         textColor: "white",
         rounded: "xl",
-        hoverbackgroundColor: "green.900",
+        hoverbackgroundColor: "ngDarkerblue",
         hovertextColor: "gray.300"
     },
 ]

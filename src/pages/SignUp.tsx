@@ -42,7 +42,7 @@ const textVariant2 = {
 
 const SignUp = () => {
   useEffect(() => {
-    document.title = "Sign Up | The Nigeria Food API ";
+    document.title = "Sign Up | NIFDA ";
   }, []);
 
   const [show, setShow] = useState(false);

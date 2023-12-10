@@ -18,6 +18,6 @@ box-shadow: inset 0 0 6px rgba(22 101 52, 0.6);
 }
 
 body::-webkit-scrollbar-thumb {
-background-color: #166534;
-outline: .1px solid #166534;
+background-color: #11132e;
+outline: .1px solid #11132e;
 }

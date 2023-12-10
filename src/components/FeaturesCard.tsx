@@ -1,4 +1,4 @@
-import { Box, Text, chakra } from "@chakra-ui/react";
+import { Box, Text, Tooltip, chakra } from "@chakra-ui/react";
 import { MdFingerprint } from "react-icons/md";
 import { features } from "../constants/features";
 import { motion } from "framer-motion";
@@ -37,7 +37,8 @@ const FeaturesCard = () => {
       <Box
         w={"100%"}
         minH={"100vh"}
-        bgGradient={"linear(to-r, green.900, green.800,  green.900)"}
+        // bgGradient={"linear(to-r, green.900, green.800,  green.900)"}
+        bg={"ngDarkblue"}
         id="features"
       >
         <Box px={{ base: "1rem", lg: "8rem" }} py={"8rem"}>
@@ -92,38 +93,45 @@ const FeaturesCard = () => {
               }}
             >
               {features.map((features, index) => (
-                <Box
-                  viewport={{ once: true }}
-                  as={motion.div}
-                  backgroundColor={"ngDarkgreen"}
-                  p={"1.8rem"}
-                  rounded={"1rem"}
-                  boxShadow="2xl"
-                  key={index}
-                  overflow={"hidden"}
-                  variants={textVariant2}
-                  initial="initial"
-                  whileInView="animate"
+                <Tooltip
+                  label={features.tooltip}
+                  bg={"white"}
+                  color={"ngDarkgreen"}
                 >
-                  <Text
-                    color={"ngGreenlight"}
-                    fontSize={"1.2rem"}
-                    pb={"1rem"}
-                    fontFamily={"heebo"}
-                    letterSpacing={".2rem"}
-                    fontWeight={700}
+                  <Box
+                    viewport={{ once: true }}
+                    as={motion.div}
+                    backgroundColor={"ngDarkerblue"}
+                    p={"1.8rem"}
+                    rounded={"1rem"}
+                    boxShadow="2xl"
+                    key={index}
+                    overflow={"hidden"}
+                    variants={textVariant2}
+                    initial="initial"
+                    whileInView="animate"
+                    _hover={{ cursor: "pointer" }}
                   >
-                    {features.title}
-                  </Text>
-                  <Text
-                    color={"white"}
-                    fontFamily={"albertSans"}
-                    letterSpacing={".1rem"}
-                    fontSize={".9rem"}
-                  >
-                    {features.details}
-                  </Text>
-                </Box>
+                    <Text
+                      color={"ngGreenlight"}
+                      fontSize={"1.2rem"}
+                      pb={"1rem"}
+                      fontFamily={"heebo"}
+                      letterSpacing={".2rem"}
+                      fontWeight={700}
+                    >
+                      {features.title}
+                    </Text>
+                    <Text
+                      color={"white"}
+                      fontFamily={"albertSans"}
+                      letterSpacing={".1rem"}
+                      fontSize={".9rem"}
+                    >
+                      {features.details}
+                    </Text>
+                  </Box>
+                </Tooltip>
               ))}
             </Box>
           </Box>

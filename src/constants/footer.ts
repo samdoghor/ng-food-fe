@@ -17,30 +17,24 @@ export const Footerlinks = [
         link: [
             {
                 id: 1,
-                label: 'About',
-                url: '/about',
-                external: false,
-            },
-            {
-                id: 2,
                 label: 'Documentation',
                 url: '/docs',
                 external: false,
             },
             {
-                id: 3,
+                id: 2,
                 label: 'Privacy',
                 url: '/privacy',
                 external: false,
             },
             {
-                id: 4,
+                id: 3,
                 label: 'Sponsor this Project',
                 url: '#',
                 external: false,
             },
             {
-                id: 5,
+                id: 4,
                 label: 'Terms of Service',
                 url: '/tos',
                 external: false,
@@ -65,30 +59,12 @@ export const Footerlinks = [
             },
             {
                 id: 3,
-                label: 'Instagram',
-                url: 'https://instagram.com/samdoghor/',
-                external: true,
-            },
-            {
-                id: 4,
-                label: 'Facebook',
-                url: 'https://facebook.com/samdoghor/',
-                external: true,
-            },
-            {
-                id: 5,
-                label: 'LinkedIn',
-                url: 'https://linkedin.com/in/samdoghor/',
-                external: true,
-            },
-            {
-                id: 6,
                 label: 'Twitter',
                 url: 'https://twitter.com/samdoghor/',
                 external: true,
             },
             {
-                id: 7,
+                id: 4,
                 label: 'Email',
                 url: 'mailto:talkto@samdoghor.com',
                 external: true,

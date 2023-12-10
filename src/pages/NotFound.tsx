@@ -3,7 +3,7 @@ import { useEffect } from "react";
 
 const NotFound = () => {
   useEffect(() => {
-    document.title = "Not Found | The Nigeria Food API";
+    document.title = "Not Found | NIFDA";
   }, []);
 
   return (

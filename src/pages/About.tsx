@@ -19,7 +19,7 @@ const textVariant = {
 
 const About = () => {
   useEffect(() => {
-    document.title = "The Nigeria Food API | About";
+    document.title = "About | NIFDA";
   }, []);
 
   return (

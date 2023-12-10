@@ -18,7 +18,19 @@ const APIExample = () => {
                 <Text> Box 1 </Text>
               </Box>
               <Box>
-                <Text> Box 2 </Text>
+                <Text
+                  fontSize={"1.5rem"}
+                  fontWeight={700}
+                  py={"10px"}
+                  px={"2px"}
+                >
+                  Response
+                </Text>
+                <Box bg={"ngDarkerblue"} h={"90vh"} rounded={"2xl"}>
+                  <Box p={"2rem"}>
+                    <Text color={"#4284f5"}> [ ] </Text>
+                  </Box>
+                </Box>
               </Box>
             </Box>
           </Box>

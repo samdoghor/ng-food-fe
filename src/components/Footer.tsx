@@ -35,7 +35,7 @@ const Footer = () => {
 
   return (
     <>
-      <Box maxW="100vw" mx="auto" bg="white" pb={{ lg: "2rem" }}>
+      <Box maxW="100vw" mx="auto" bg="white" pb={{ lg: "1rem" }}>
         {/* Section One */}
         <Box
           px={{ base: "1rem", lg: "8rem" }}
@@ -60,7 +60,7 @@ const Footer = () => {
                   fontSize={"1.2rem"}
                   fontWeight={700}
                   pb={"1.2rem"}
-                  color={"green.900"}
+                  color={"ngDarkblue"}
                 >
                   {section.title}
                 </Text>
@@ -88,47 +88,48 @@ const Footer = () => {
         </Box>
 
         {/* Section Two */}
-        <Box
-          px={{ base: "1rem", lg: "8rem" }}
-          display={"flex"}
-          alignItems="center"
-          justifyContent="center"
-          pb={"2rem"}
-        >
-          <Image
-            viewport={{ once: true }}
-            as={motion.img}
-            src="src/assets/img/nigeria_flag.jpg"
-            alt="Nigeria Flag & Coat of Arms"
-            borderRadius="full"
-            boxSize={{ base: "35px", lg: "40px" }}
-            objectFit="cover"
-            fallbackSrc="https://via.placeholder.com/150"
-            variants={imgVariant}
-            initial="initial"
-            whileInView="animate"
-          />
-          <Text
-            color={"ngGreenvid"}
-            pl={"1.5rem"}
-            fontWeight={500}
-            viewport={{ once: true }}
-            as={motion.p}
-            variants={textVariant}
-            initial="initial"
-            whileInView="animate"
+        <Box display={"absolute"} bottom={0} pt={"2rem"}>
+          <Box
+            px={{ base: "1rem", lg: "8rem" }}
+            display={"flex"}
+            alignItems="center"
+            justifyContent="center"
           >
-            Proudly developed by
-            <Link
-              href="https://www.samdoghor.com"
-              pl={".4rem"}
-              fontWeight={900}
-              color={"green.900"}
-              isExternal
+            <Image
+              viewport={{ once: true }}
+              as={motion.img}
+              src="src/assets/img/nigeria_flag.jpg"
+              alt="Nigeria Flag & Coat of Arms"
+              borderRadius="full"
+              boxSize={{ base: "35px", lg: "40px" }}
+              objectFit="cover"
+              fallbackSrc="https://via.placeholder.com/150"
+              variants={imgVariant}
+              initial="initial"
+              whileInView="animate"
+            />
+            <Text
+              color={"ngDarkblue"}
+              pl={"1.5rem"}
+              fontWeight={500}
+              viewport={{ once: true }}
+              as={motion.p}
+              variants={textVariant}
+              initial="initial"
+              whileInView="animate"
             >
-              Samuel, Doghor Destiny <ExternalLinkIcon mx="2px" />
-            </Link>
-          </Text>
+              Proudly developed by
+              <Link
+                href="https://www.samdoghor.com"
+                pl={".4rem"}
+                fontWeight={900}
+                color={"ngDarkblue"}
+                isExternal
+              >
+                Samuel, Doghor Destiny <ExternalLinkIcon mx="2px" />
+              </Link>
+            </Text>
+          </Box>
         </Box>
 
         {/* <Box

@@ -50,7 +50,7 @@ const textVariant2 = {
 
 const Home = () => {
   useEffect(() => {
-    document.title = "The Nigeria Food API | Home";
+    document.title = "Home | NIFDA";
   }, []);
 
   return (
@@ -169,7 +169,8 @@ const Home = () => {
         <Box
           w={"100%"}
           minH={"100vh"}
-          bgGradient={"linear(to-r, green.900, green.800,  green.900)"}
+          // bgGradient={"linear(to-r, green.900, green.800,  green.900)"}
+          bg={"ngDarkblue"}
           id="tryitout"
         >
           <Box px={{ base: "1rem", lg: "8rem" }} py={"8rem"}>

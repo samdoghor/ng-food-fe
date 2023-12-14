@@ -42,7 +42,7 @@ const Footer = () => {
           pt={"4rem"}
           display={"flex"}
           alignItems="center"
-          justifyContent="center"
+          justifyContent={{ base: "left", md: "center" }}
         >
           <Box
             viewport={{ once: true }}

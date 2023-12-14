@@ -96,8 +96,8 @@ const Home = () => {
                 <chakra.span color={"gray.600"} fontSize={"2rem"} pr={"1rem"}>
                   <chakra.sub>#1</chakra.sub>
                 </chakra.span>
-                The
-                <chakra.span className="" color={"green.800"} px={"1rem"}>
+                <chakra.span></chakra.span>The
+                <chakra.span className="" color={"green.800"} px={"2rem"}>
                   Nigeria
                 </chakra.span>
                 Food Database API (NIFDA)

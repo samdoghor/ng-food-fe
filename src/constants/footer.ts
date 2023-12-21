@@ -5,7 +5,7 @@ export const Footerlinks = [
         link: [
             {
                 id: 1,
-                label: 'Food Logic (Coming Soon!)',
+                label: 'NINUSU (Nigeria Nutri Survey - Coming Soon!)',
                 url: '#',
                 external: false,
             },

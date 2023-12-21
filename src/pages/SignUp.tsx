@@ -42,7 +42,7 @@ const textVariant2 = {
 
 const SignUp = () => {
   useEffect(() => {
-    document.title = "Sign Up | NIFDA ";
+    document.title = "Sign Up | NIFODA ";
   }, []);
 
   const [show, setShow] = useState(false);
@@ -86,7 +86,8 @@ const SignUp = () => {
                   overflow={"hidden"}
                 >
                   Please share some of your details with us so that we can
-                  authorize your access to the Nigeria Food Database API.
+                  authorize your access to the Nigeria Food Database API
+                  (NIFODA).
                 </Text>
                 <FormControl>
                   <Stack spacing={2} pt={"2rem"} overflow={"hidden"}>

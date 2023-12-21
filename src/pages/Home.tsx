@@ -50,7 +50,7 @@ const textVariant2 = {
 
 const Home = () => {
   useEffect(() => {
-    document.title = "Home | NIFDA";
+    document.title = "Home | NIFODA";
   }, []);
 
   return (
@@ -100,7 +100,7 @@ const Home = () => {
                 <chakra.span className="" color={"green.800"} px={"2rem"}>
                   Nigeria
                 </chakra.span>
-                Food Database API (NIFDA)
+                Food Database API (NIFODA)
               </Text>
               <Text
                 viewport={{ once: true }}
@@ -119,7 +119,7 @@ const Home = () => {
                 Explore a rich collection of Nigerian recipes, ingredients,
                 <br />
                 and culinary traditions with our comprehensive <br />
-                Nigeria Food API database.
+                Nigeria Food Database API (NIFODA).
               </Text>
             </Box>
           </Box>

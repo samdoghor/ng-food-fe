@@ -3,7 +3,7 @@ import { useEffect } from "react";
 
 const Privacy = () => {
   useEffect(() => {
-    document.title = "Privacy | NIFDA";
+    document.title = "Privacy | NIFODA";
   }, []);
 
   return (

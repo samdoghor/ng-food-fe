@@ -1,12 +1,12 @@
-# Nigeria Food API Frontend
+# Nigeria Food Database API (NIFODA) Frontend
 
-This is the frontend repository for the `Nigeria Food API project`. It is built with Vite, React, TypeScript, and Chakra-UI. The frontend provides a user interface to interact with the Nigerian Food Database API and display information about various Nigerian dishes, their ingredients, and nutritional values. [Read More](ABOUT.md)
+This is the frontend repository for the `Nigeria Food Database API (NIFODA) project`. It is built with Vite, React, TypeScript, and Chakra-UI. The frontend provides a user interface to interact with the Nigerian Food Database API (NIFODA) and display information about various Nigerian dishes, their ingredients, and nutritional values. [Read More](ABOUT.md)
 
 ## Related Repo
 
-[Backend](https://github.com/samdoghor/ng-food-api) of the Nigeria Food APIs
+[Backend](https://github.com/samdoghor/ng-food-api) of the Nigeria Food Database APIs (NIFODA)
 
-[Admin](https://github.com/samdoghor/ng-food-admin) of the Nigeria Food APIs
+[Admin](https://github.com/samdoghor/ng-food-admin) of the Nigeria Food Database APIs (NIFODA)
 
 ## Installation
 
@@ -48,6 +48,7 @@ Contributions to this project are currently not open. However, you are welcome t
 
 ## Contact
 
-To contact the developer, email [talkto@samdoghor.com](mailto:talkto@sadoghor.com)
+Official: To contact us, email [info@nifodar.co.ngm](mailto:info@nifoda.com.ng)
+Developer: To contact the developer, email [talkto@samdoghor.com](mailto:talkto@samdoghor.com)
 
 Please note that this project is still in its early stages, and more functionality may be added in the future. This README file will be updated accordingly as the project progresses.

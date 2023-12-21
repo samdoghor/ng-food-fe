@@ -19,7 +19,7 @@ const textVariant = {
 
 const About = () => {
   useEffect(() => {
-    document.title = "About | NIFDA";
+    document.title = "About | NIFODA";
   }, []);
 
   return (

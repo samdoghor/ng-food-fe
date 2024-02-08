@@ -48,7 +48,7 @@ Contributions to this project are currently not open. However, you are welcome t
 
 ## Contact
 
-Official: To contact us, email [info@nifodar.co.ngm](mailto:info@nifoda.com.ng)
+Official: To contact us, email [info@nifoda.com.ng](mailto:info@nifoda.com.ng)
 Developer: To contact the developer, email [talkto@samdoghor.com](mailto:talkto@samdoghor.com)
 
 Please note that this project is still in its early stages, and more functionality may be added in the future. This README file will be updated accordingly as the project progresses.

@@ -5,11 +5,14 @@ const Router = () => {
   return (
     <>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/privacy" element={<Privacy />} />
-        <Route path="/tos" element={<Terms />} />
-        <Route path="/signup" element={<SignUp />} />
+        <Route path="/">
+          <Route index element={<Home />} />
+          <Route path="about" element={<About />} />
+        </Route>
+        <Route path="about" element={<About />} />
+        <Route path="privacy" element={<Privacy />} />
+        <Route path="tos" element={<Terms />} />
+        <Route path="signup" element={<SignUp />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </>

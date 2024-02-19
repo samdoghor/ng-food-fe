@@ -1,18 +1,6 @@
 export const Footerlinks = [
     {
         id: 1,
-        title: "Related Projects",
-        link: [
-            {
-                id: 1,
-                label: 'NINUSU (Nigeria Nutri Survey - Coming Soon!)',
-                url: '#',
-                external: false,
-            },
-        ]
-    },
-    {
-        id: 2,
         title: "Quick Links",
         link: [
             {
@@ -42,7 +30,7 @@ export const Footerlinks = [
         ]
     },
     {
-        id: 3,
+        id: 2,
         title: "Socials",
         link: [
             {

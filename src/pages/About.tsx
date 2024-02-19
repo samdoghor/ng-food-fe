@@ -2,21 +2,7 @@ import { Box, Text } from "@chakra-ui/react";
 import { useEffect } from "react";
 import { AboutContent } from "../constants/about";
 import GetAPI from "../components/GetAPI";
-import { motion } from "framer-motion";
 import { ListItem, UnorderedList } from "@chakra-ui/react";
-
-const textVariant = {
-  initial: {
-    opacity: 0,
-  },
-  animate: {
-    opacity: 1,
-    transition: {
-      delay: 0.5,
-      duration: 2,
-    },
-  },
-};
 
 const About = () => {
   useEffect(() => {
@@ -26,7 +12,7 @@ const About = () => {
   return (
     <>
       <Box>
-        <Box w={"100%"} minH={"100vh"} bg="gray.100" id="tryit">
+        <Box w={"100%"} minH={"100vh"} bg="white">
           <Box px={{ base: "1rem", lg: "8rem" }} py={"4rem"}>
             <Box>
               <Text
@@ -36,11 +22,6 @@ const About = () => {
                 fontFamily={"overpass"}
                 display={"flex"}
                 mt={"4rem"}
-                as={motion.p}
-                viewport={{ once: true }}
-                variants={textVariant}
-                initial="initial"
-                whileInView="animate"
               >
                 About
               </Text>
@@ -50,28 +31,17 @@ const About = () => {
                     key={index}
                     fontFamily={"albertSans"}
                     letterSpacing={".1rem"}
-                    fontSize={"1.2rem"}
+                    fontSize={"16px"}
                     fontWeight={"500"}
                     lineHeight={"2rem"}
-                    as={motion.p}
-                    viewport={{ once: true }}
-                    variants={textVariant}
-                    initial="initial"
-                    whileInView="animate"
                   >
-                    <Text py={"1rem"} pe={{ lg: "20rem" }}>
-                      {about.p1}
-                    </Text>
-                    <Text py={"1rem"} pe={{ lg: "20rem" }}>
-                      {about.p2}
-                    </Text>
-                    <Text py={"1rem"} pe={{ lg: "20rem" }}>
-                      {about.p3}
-                    </Text>
-                    <Text py={"1rem"} pe={{ lg: "20rem" }} fontWeight={900}>
+                    <Text py={"1rem"}>{about.p1}</Text>
+                    <Text py={"1rem"}>{about.p2}</Text>
+                    <Text py={"1rem"}>{about.p3}</Text>
+                    <Text py={"1rem"} fontWeight={900}>
                       NIFODA boasts several key features and benefits:
                     </Text>
-                    <Text pb={"1rem"} pe={{ lg: "20rem" }}>
+                    <Text pb={"1rem"}>
                       <UnorderedList>
                         <ListItem pb={"1rem"}>
                           <Text fontWeight={900}>

@@ -8,8 +8,8 @@ const chakraTheme = extendTheme({
         heebo: `'Heebo', 'sans-serif'`,
     },
     colors: {
-        ngDarkblue: '#11132e',
-        ngDarkerblue: '#080a24',
+        ngDarkblue: '#1e292c',
+        ngDarkerblue: '#10191c',
         ngDarkgreen: '#0a2619',
         ngGreenlight: '#b8f2d7',
         ngOffwhite: '#dedddc',

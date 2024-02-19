@@ -22,12 +22,12 @@ export const Navlinks = [
         element: "About"
     },
     {
-        id: 4,
+        id: 5,
         path: "/signup",
         element: "Get Api Key"
     },
     {
-        id: 5,
+        id: 6,
         path: "/data",
         element: " Nutri Data",
         backgroundColor: "ngDarkblue",

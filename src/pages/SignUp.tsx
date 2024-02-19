@@ -9,36 +9,7 @@ import {
   FormControl,
 } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
-import { motion } from "framer-motion";
 import { PiEyeClosedBold, PiEyeBold } from "react-icons/pi";
-
-const textVariant = {
-  initial: {
-    opacity: 0,
-  },
-  animate: {
-    opacity: 1,
-    transition: {
-      delay: 0.5,
-      duration: 2,
-    },
-  },
-};
-
-const textVariant2 = {
-  initial: {
-    opacity: 0,
-    y: 20,
-  },
-  animate: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      delay: 0.8,
-      duration: 1,
-    },
-  },
-};
 
 const SignUp = () => {
   useEffect(() => {
@@ -64,16 +35,11 @@ const SignUp = () => {
             >
               <Box p={"1.5rem"}>
                 <Text
-                  viewport={{ once: true }}
-                  as={motion.p}
                   fontSize={"2.4rem"}
-                  color={"green.900"}
+                  color={"ngDarkblue"}
                   fontWeight={"900"}
                   fontFamily={"overpass"}
                   display={"flex"}
-                  variants={textVariant}
-                  initial="initial"
-                  whileInView="animate"
                 >
                   Sign Up.
                 </Text>
@@ -117,11 +83,11 @@ const SignUp = () => {
                           size="lg"
                           onClick={handleClick}
                           fontSize={"2rem"}
-                          backgroundColor={"green.800"}
+                          backgroundColor={"ngDarkblue"}
                           textColor={"white"}
                           roundedRight={"md"}
                           _hover={{
-                            backgroundColor: "green.900",
+                            backgroundColor: "ngDarkblue",
                             textColor: "gray.300",
                           }}
                         >
@@ -132,18 +98,13 @@ const SignUp = () => {
 
                     <Button
                       mt={"2rem"}
-                      backgroundColor={"green.800"}
+                      backgroundColor={"ngDarkblue"}
                       textColor={"white"}
                       _hover={{
-                        backgroundColor: "green.900",
+                        backgroundColor: "ngDarkblue",
                         textColor: "gray.300",
                       }}
                       size="lg"
-                      as={motion.button}
-                      viewport={{ once: true }}
-                      variants={textVariant2}
-                      initial="initial"
-                      whileInView="animate"
                     >
                       Create Account
                     </Button>

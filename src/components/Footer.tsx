@@ -35,7 +35,7 @@ const Footer = () => {
 
   return (
     <>
-      <Box maxW="100vw" mx="auto" bg="white" pb={{ lg: "1rem" }}>
+      <Box maxW="100vw" mx="auto" bg="gray.100" pb={{ lg: "1rem" }}>
         {/* Section One */}
         <Box
           px={{ base: "1rem", lg: "8rem" }}
@@ -54,6 +54,25 @@ const Footer = () => {
             initial="initial"
             whileInView="animate"
           >
+            <Box>
+              <Text
+                fontSize={"1.2rem"}
+                fontWeight={700}
+                pb={"1.2rem"}
+                color={"ngDarkblue"}
+              >
+                About Project
+              </Text>
+              <Text fontSize={"1rem"} pb={".8rem"}>
+                <chakra.p pb={".6rem"} fontFamily={"heebo"}>
+                  <Text>
+                    The Nigerian Food Database API (NIFODA) is the brainchild of
+                    Samuel Doghor Destiny, a passionate advocate for advancing
+                    the field of food science and technology in Nigeria
+                  </Text>
+                </chakra.p>
+              </Text>
+            </Box>
             {Footerlinks.map((section) => (
               <Box key={section.id}>
                 <Text
@@ -70,10 +89,10 @@ const Footer = () => {
                       key={index}
                       pb={".6rem"}
                       fontFamily={"heebo"}
-                      transition={".5s"}
+                      transition={".2s"}
                       _hover={{
-                        transform: "scale(0.95)",
-                        transition: ".ss",
+                        transform: "scale(0.97)",
+                        transition: ".2s",
                       }}
                     >
                       <Link href={link.url} isExternal={link.external === true}>

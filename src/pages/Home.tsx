@@ -57,7 +57,7 @@ const Home = () => {
     <>
       <Box>
         {/* Section One */}
-        <Box maxW="100vw" minH="100vh" mx="auto" bg="gray.100">
+        <Box maxW="100vw" minH="100vh" mx="auto" bg="white">
           <Box p={{ base: "1rem", lg: "2.5rem" }} mt={"4rem"}>
             <Box
               py={"3rem"}
@@ -129,7 +129,7 @@ const Home = () => {
         <FeaturesCard />
 
         {/* Section Three */}
-        <Box w={"100%"} minH={"100vh"} bg="gray.100" id="example">
+        <Box w={"100%"} minH={"100vh"} bg="white" id="example">
           <Box px={{ base: "1rem", lg: "8rem" }} py={"8rem"}>
             <Text
               viewport={{ once: true }}
